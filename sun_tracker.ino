@@ -59,6 +59,9 @@ const int V = 0;
 // 0x40 - PCA9685.
 Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver(0x40); 
 
+// Analog read.
+const int analog_input = A0;
+
 void setup() {
   Serial.begin(115200);
 
@@ -170,7 +173,7 @@ void full_scan() {
       set_angle_microsec(V, v);
       v += v_inc;
       
-      current_insolation = analogRead(A0);
+      current_insolation = analogRead(analog_input);
       if (current_insolation > best_insolation) {
         best_insolation = current_insolation;
         best_angle_h = h;

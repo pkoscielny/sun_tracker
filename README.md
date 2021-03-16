@@ -14,6 +14,12 @@ You can adapt and modify this code as you need.
 * hand made skeleton
 * some RC parts for step motors and servos
 
+### Breadboard circuit diagram
+![circuit](/fz/sun_tracker.png)
+
+### Device
+![view](/img/sun_tracker_right_side.jpg)
+
 ## Scripts
 
 ### fix_insolation_matrix.py
@@ -33,5 +39,9 @@ python fix_insolation_matrix.py
 python insolation_matrix_to_png.py
 ```
 Finally you will have `insolation.png` file.
+
+### Example of PNG file
+After enlarging the image:
+![landscape](/img/landscape_xD.png)
 
 Enjoy!
